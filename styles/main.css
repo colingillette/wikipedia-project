@@ -1,5 +1,17 @@
+.article-img {
+    width: 25%;
+}
+
+.article-img-caption {
+    font-size: .75em;
+}
+
 header {
-    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.header-left {
+    text-align: center;
 }
 
 .sidebar-logo {
