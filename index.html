@@ -1,114 +1,211 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Wikipedia, the free encyclopedia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="img/logo-image.PNG"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
-    <!-- CSS CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- js CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="row">
-        <section class="col-sm-1">
-            <img class="sidebar-logo" src="img/logo-image.PNG" alt="logo">
-            <img class="sidebar-logo" src="img/logo-text.PNG" alt="tagline">
-        </section> <!-- end sidebar -->
-        
-        <div class="col-sm-10">
-            <header class="row">    
-                <div class="float-left header-left">
-                        <h1 style="margin-left:0.5em;">Welcome to <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a></h1>
-                        <p>
-                            the <a href="https://en.wikipedia.org/wiki/Free_content">free</a> <a href="https://en.wikipedia.org/wiki/Encyclopedia">encyclopedia</a> that <a href="https://en.wikipedia.org/wiki/Wikipedia:Introduction">anyone can edit</a>.<br>
-                        
-                            <a href="https://en.wikipedia.org/wiki/Special:Statistics">5,790,896</a> articles in <a href="https://en.wikipedia.org/wiki/English_language>English">English</a>.
-                        </p>
-                </div> <!-- End float left wikipedia header items-->
-                
-                <div class="float-right">
-                    <div>
-                        <ul>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Society</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Technology</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">All portals</a>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">History</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Mathematics</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Science</a>                        
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Arts</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Biography</a>
-                            <a href="https://en.wikipedia.org/wiki/Wikipedia">Geography</a>                    
-                        </ul>
-                    </div>
-                </div> <!-- End float right ul items -->
-            </header> <!-- End header items -->
-
-            <div class="row">
-                <section class="col-sm-6">
-                    <div class="row">
-                        <article>
-                            <h3>From today's featured article</h3>
-                            <figure class="float-left">
-                                <img src="img/article-img/pigeon-photography.jpg" alt="pigeon photography" class="float-left article-img">
-                                <figcaption class="article-img article-img-caption">Pigeon with German miniature camera, probably taken during the First World War</figcaption>
-                            </figure>
-
-                            <p>
-                                Pigeon photography is an aerial photography technique invented in 1907 by the German apothecary Julius Neubronner, who also used pigeons to deliver medications. A homing pigeon was fitted with an aluminium breast harness to which a lightweight time-delayed miniature camera could be attached. Neubronner's German patent application was initially rejected, but was granted in December 1908 after he produced authenticated photographs taken by his pigeons. He publicized the technique at the 1909 Dresden International Photographic Exhibition, and sold some images as postcards at the Frankfurt International Aviation Exhibition and at the 1910 and 1911 Paris Air Shows.
-                                <a href="https://en.wikipedia.org/wiki/Pigeon_photography">(Full article...)</a>
-                            </p>
-                            
-                            <p>
-                                Recently featured: 
-                                <a href="https://en.wikipedia.org/wiki/Reception_history_of_Jane_Austen">Reception History of Jane Austen</a>
-                                <a href="https://en.wikipedia.org/wiki/San_Junipero">San Junipero</a>
-                                <a href="https://en.wikipedia.org/wiki/Thomasomys_ucucha">Thomasomys Uchua</a>
-                            </p>
-
-                            <ul>
-                                <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article/January_2019">Archive</a></li>
-                                <li><a href="https://lists.wikimedia.org/mailman/listinfo/daily-article-l">By email</a></li>
-                                <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_articles">More featured articles</a></li>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="shortcut icon" type="image/png" href="https://www.google.com/url?sa=i&source=imgres&cd=&cad=rja&uact=8&ved=2ahUKEwiqr8CdqI_gAhUBPa0KHZ-wBCgQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3AWikipedia-logo-v2.svg&psig=AOvVaw20k89XyQtiNoLSS2voEiEm&ust=1548724967017079"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <div class="row" style="clear: both">
+                <div class="sidebar col-sm-1">
+                    <img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b3/Wikipedia-logo-v2-en.svg/revision/latest/scale-to-width-down/401?cb=20100519143323" class ="img-responsive">
+                            <ul style="list-style-type: none; padding: 0; padding-top: 1em">
+                                <li><a href="#">Main Page</a></li>
+                                <li><a href="#">Contents</a></li>
+                                <li><a href="#">Featured content</a></li>
+                                <li><a href="#">Current events</a></li>
+                                <li><a href="#">Random article</a></li>
+                                <li><a href="#">Donate to Wikipedia</a></li>
+                                <li><a href="#">Wikipedia store</a></li>
                             </ul>
-                        </article> <!-- end first left article-->
+                        
+                        
+                            <h4 style="margin-top: 2em;">Interaction</h4>
+                            <ul style="list-style-type: none; padding: 0">
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">About Wikipedia</a></li>
+                                <li><a href="#">Community Portal</a></li>
+                                <li><a href="#">Recent Changes</a></li>
+                                <li><a href="#">Contact Page</a></li>
+                            </ul>
+                        
+                </div> <!-- End Sidebar -->
+
+                <div class="main col-sm-11">
+                    <div class="row">
+                        <ul class="col-sm-12 list-inline pull-right text-right">
+                            <li><a href="#">Talk</a></li>
+                            <li><a href="#">Contributions</a></li>
+                            <li><a href="#">Create account</a></li>
+                            <li><a href="#">Log in</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" style="float: right" placeholder="Search Wikipedia">
+                            <ul class="list-inline" style="list-style-type: none">
+                                <li><a href="#">Main page</a></li>
+                                <li><a href="#">Talk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main col-sm-11" style="border: solid #A7D7F9 1px;">
+                    <div class="row box" style="background-color: #F5FFFA; margin: 0; border: solid #DDDDDD 1px; margin-top: .5em;">
+                        <div class="col-sm-6" style="text-align: center">
+                            <h3>Welcome to <a href="#">Wikipedia</a>,</h3>
+                            <p>the free encyclopedia that anyone can edit.</p>
+                            <p><a href="#">5,792,343</a> articles in <a href="#">English</a></p>
+                        </div>
+                        <ul class="col-sm-6 portal" style="top: 2em; float: right">
+                            <li style="left: 0; top: 0"><a href="#">Arts</a></li>
+                            <li style="left: 0; top: 1.6em"><a href="#">Biography</a></li>
+                            <li style="left: 0; top: 3.2em"><a href="#">Geography</a></li>
+                            <li style="left: 33%; top: 0"><a href="#">History</a></li>
+                            <li style="left: 33%; top: 1.6em"><a href="#">Mathematics</a></li>
+                            <li style="left: 33%; top: 3.2em"><a href="#">Science</a></li>
+                            <li style="left: 66%; top: 0"><a href="#">Society</a></li>
+                            <li style="left: 66%; top: 1.6em"><a href="#">Technology</a></li>
+                            <li style="left: 66%; top: 3.2em"><a href="#">All portals</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="row">
+                        
+                        <div class="col-sm-6 box" style="background-color: rgb(226, 253, 239)">
+                            <h3 style="background-color: #CEF2E0; border: solid black 1px ">From today's featured article</h3>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sitta-carolinensis-001_%28mirrored%29.jpg/120px-Sitta-carolinensis-001_%28mirrored%29.jpg" style ="float: left; margin: 1em">
+                            <p style="display: inline">The white-breasted nuthatch (Sitta carolinensis) is a small songbird that breeds in old-growth woodland across much of temperate North America. It is a stocky nuthatch with a large head, short tail, powerful bill, and strong feet. The upperparts are pale blue-gray, and the face and underparts are white. It has a black cap and a chestnut lower belly. The nine subspecies differ mainly in the color of the body plumage. Like other nuthatches, the white-breasted nuthatch forages for insects on trunks and branches and is able to move head-first down trees. Seeds form a substantial part of its winter diet, as do acorns and hickory nuts that were stored by the bird in the fall. The nest is in a hole in a tree, and a breeding pair may smear insects around the entrance as a deterrent to squirrels. Adults and their young may be killed by hawks, owls, and snakes, and forest clearance may lead to local habitat loss, but this is a common species with no major conservation concerns over most of its range. (Full article...)</p>
+                            <p style="text-align: right">Recently featured: 1998 NFC Championship Game Plunketts Creek (Loyalsock Creek tributary) Mit Fried und Freud ich fahr dahin, BWV 125Archive By email More featured articles</p>
+                        
+                            <h3 style="background-color: #CEF2E0; border: solid black 1px ">Did you know...</h3>
+                            <figure style="float: right;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Humphrey_IV_of_Toron_Isabela.jpg/80px-Humphrey_IV_of_Toron_Isabela.jpg">
+                                <figcaption>Humphrey and<br> Isabella's wedding</figcaption>
+                            </figure>
+                            <ul>
+                                <li>... that Humphrey IV of Toron married Isabella of Jerusalem (marriage ceremony pictured) in Kerak Castle in 1183, but a siege by Saladin disturbed the wedding?</li>
+                                <li>... that prickly felicia belongs to the daisy family and is found on sand dunes in the Cape Floristic Region of South Africa?</li>
+                                <li>... that Celia M. Burleigh became the first woman pastor ordained into the Unitarian ministry?</li>
+                                <li>... that an archaeological find identified as a 10th-century Viking helmet has been alleged to actually be a World War II Luftwaffe helmet?</li>
+                                <li>... that all of the proposals to honor Michael Jackson at New York City's Hoyt–Schermerhorn Streets subway station have been declined?</li>
+                                <li>... that Chinese naval commander Zhang Wendan exchanged information on pirate activity with the Japanese, in a rare occasion of military cooperation between the two countries?</li>
+                                <li>... that the Rahway River Parkway, designed by Olmsted Brothers in the 1920s, was a project of the newly-formed Union County parks commission?</li>
+                                <li>... that, according to Lord Mountbatten, Queen Elizabeth II planned to hit Idi Amin with the Pearl Sword if he came to her Silver Jubilee?</li>
+                            </ul>
+                            <p style="text-align: right">Recent additions Start a new article Nominate an article</p>
+                        </div>
+                        
+                        <div class="col-sm-6 box equal" style="background-color: rgb(226, 237, 247)">
+                            <h3 style="border: solid black 1px; background-color: #CEDFF2">In the News</h3>
+                            <figure style="float: right">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Nick_Foles_2014_Pro_Bowl.jpg/100px-Nick_Foles_2014_Pro_Bowl.jpg">
+                                <figcaption>Nick Foles</figcaption>
+                            </figure>
+                            <ul>
+                                <li>In American football, the Philadelphia Eagles defeat the New England Patriots in Super Bowl LII (MVP Nick Foles pictured).</li>
+                                <li>Archaeologists announce the discovery using LiDAR of approximately 60,000 Mayan structures in the Maya Biosphere Reserve, Guatemala.</li>
+                                <li>A total lunar eclipse occurs, close to perigee and also the second full moon in a month, a coincidence of events not seen for 35 years.</li>
+                                <li>A new genus of lithostrotian sauropod, Mansourasaurus, is discovered in Egypt.</li>
+                                <li>In Yemen, separatists from the Southern Transitional Council seize government buildings in Aden from President Abdrabbuh Mansur Hadi's forces.</li>
+                            
+                            </ul>
+                        
+                            <h3 style="border: solid black 1px; background-color: #CEDFF2">On this day...</h3>
+                            <figure style="float: right">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Tulipomania.jpg/100px-Tulipomania.jpg">
+                                <figcaption>A tulip from a<br> 1637 Dutch<br> catalog</figcaption>
+                            </figure>
+                            <ul>
+                                <li>1637 – The speculative bubble for rare tulip bulbs (catalog pictured) in the Dutch Republic burst, marking the decline of tulip mania.</li>
+                                <li>1869 – Prospectors in Moliagul, Victoria, Australia, discovered the largest alluvial gold nugget ever found, known as the "Welcome Stranger".</li>
+                                <li>1909 – Belgian chemist Leo Baekeland announced the creation of Bakelite, the world's first synthetic plastic.</li>
+                                <li>1958 – A Mark 15 nuclear bomb disappeared off the shores of Tybee Island, Georgia, after it was jettisoned during a practice exercise when the bomber carrying it collided in midair with a fighter plane.</li>
+                                <li>2008 – Eighty-seven tornadoes occurred over the course of the Super Tuesday tornado outbreak across multiple U.S. states, causing 56 deaths and over $1 billion in damage.</li>
+                            </ul>
+                            <p>Johan Ludvig Runeberg (b. 1804) · Peg Entwistle (b. 1908) · Margaret Oakley Dayhoff (d. 1983)</p>
+                            <p>More anniversaries: February 4 February 5 February 6</p>
+                            <p style="text-align: right">Archive By email List of historical anniversaries</p>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <article>
-                            <h3>Did you know...</h3>
-                        </article> <!-- end last left article-->
+                        <div class="col-sm-12" style="background-color: rgb(240, 229, 234); border: solid white 10px">
+                            <h3 style="background-color: #F2CEDD">From today's featured list</h3>
+                            <figure style="float: right">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Adrian_Peterson.jpg/85px-Adrian_Peterson.jpg" style ="margin: 1em">
+                                <figcaption>2012 winner <a href = "#">Adrian<br>Peterson</a></figcaption>
+                            </figure>
+                            <p>The Associated Press NFL Offensive Player of the Year Award is given annually by the Associated Press (AP) to the offensive player in the National Football League (NFL) deemed to have had the most outstanding season. The winner is chosen by votes from a nationwide panel of sportswriters who regularly follow the NFL. Multiple-time awardees include Marshall Faulk and Earl Campbell, both of whom won the award three times, each consecutively. Every winner of the award has been either a running back or a quarterback, with the exception of Jerry Rice, who won twice as a wide receiver. Running backs have been awarded 25 times, followed by quarterbacks, with 19 awards. Of the 46 winners, 27 were also named the AP NFL Most Valuable Player in the same season. Since 2011, both awards have been given out at the annual NFL Honors ceremony along with other AP awards, including the AP NFL Defensive Player of the Year Award and AP NFL Offensive and Defensive Rookie of the Year Award. (Full list...)</p>
+                            <p style="text-align: right">Recently featured: Essex Wildlife Trust Jacques Rivette filmography Presidents of India</p>
+                            <p style="text-align: right">Archive More featured lists</p>
+                        </div>
                     </div>
-                </section> <!-- End left side main items -->
-                    
-                <section class="col-sm-6">
                     <div class="row">
-                        <article>
-                            <h3>In the news</h3>
-                        </article> <!-- end first right article -->
+                        <div class="col-sm-12" style="background-color: rgb(243, 232, 253); border: solid white 10px">
+                            <h3 style="background-color: #DDCEF2">Today's featured picture</h3>
+                            <img class="col-sm-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Akseli_Gallen-Kallela_-_Kullervo_Cursing_-_Google_Art_Project.jpg/260px-Akseli_Gallen-Kallela_-_Kullervo_Cursing_-_Google_Art_Project.jpg">
+                            <p class="col-sm-10">	
+                            Kullervo is an ill-fated character in the Finnish national epic Kalevala. In this epic, Kullervo grows up in the aftermath of the massacre of his entire tribe only to realise that those who raised him were those who had butchered his family. As a child, he is sold into slavery. When he finally runs away from his masters, he discovers surviving members of his family, only to lose them again. He seduces a girl, who turns out to be his sister, and who commits suicide upon discovering their blood ties. Kullervo becomes mad with rage, returns to Untamo and his tribe, destroys them using his magical powers, and commits suicide.
+
+                            Kullervo has been widely represented in Finnish art, including in this 1899 painting by Akseli Gallen-Kallela and an 1892 opera by Jean Sibelius. The character was adapted by J. R. R. Tolkien into Túrin Turambar, a character who appears frequently in Tolkien's legendarium
+                            </p>
+                        </div>
                     </div>
                     <div class="row">
-                        <article>
-                            <h3>On this day</h3>
-
-                        </article> <!-- end second right article -->
+                        <h3 style="border-bottom: solid black 1px">Other Areas of Wikipedia</h3>
+                        <ul>
+                            <li><a href="#">Community portal</a> – Bulletin board, projects, resources and activities covering a wide range of Wikipedia areas.</li>
+                            <li><a href="#">Help desk</a> – Ask questions about using Wikipedia.</li>
+                            <li><a href="#">Local embassy</a> – For Wikipedia-related communication in languages other than English.</li>
+                            <li><a href="#">Reference desk</a> – Serving as virtual librarians, Wikipedia volunteers tackle your questions on a wide range of subjects.</li>
+                            <li><a href="#">Site news</a> – Announcements, updates, articles and press releases on Wikipedia and the Wikimedia Foundation.</li>
+                            <li><a href="#">Village pump</a> – For discussions about Wikipedia itself, including areas for technical issues and policies.</li>
+                        </ul>
                     </div>
-                </section> <!-- End right side main items -->
-            </div> <!-- End Main Body -->
-        </div> <!-- End col-9 for all things not sidebar -->
-
-        <div class="col-sm-1"></div> <!-- placeholder -->
-    </div>
-</body>
+                    <div class="row">
+                        <h3 style="border-bottom: solid black 1px;"> Wikipedia's sister projects</h3>
+                        <p style="width: 95%; margin: auto;">Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects:</p>
+                        <div class="table-responsive" style="width: 95%; margin: auto;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png" ><a href="#">Commons</a><br>free media repository
+                                        </td>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mediawiki-logo.png/35px-Mediawiki-logo.png"><a href="#">MediaWiki</a><br>Wiki software development
+                                        </td>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png"><a href="#">Meta-Wiki</a><br>Wikimedia project coordination
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png"><a href="#">Wikibooks</a><br>Free textbooks and manuals
+                                        </td>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png"><a href="#">Wikidata</a><br>Free knowledge base
+                                        </td>
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png"><a href="#">Wikinews</a><br>Free-content news
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        
+    </body>
 </html>
